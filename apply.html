@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Apply for a Web Developmment Job!">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Application</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+  <body class="apply">
+    <!----------------------------------Code for navigation bar-------------------------->
+  </head>
+<section class="form-whole">
+    <form action="https://mercury.swin.edu.au/it000000/formtest.php." method="post">
+    <body class="about-html">
+        <header class="header-main">
+            <div class="header-main-logo">
+              <a href="index.html"><img src="IMG/linus.png" alt="Group logo"></a>
+              <nav class="header-main-nav">
+                <ul>
+                  <li><a href="index.html">HOME</a></li>
+                  <li><a href="jobs.html">JOBS</a></li>
+                  <li><a href="apply.html">JOB APPLICATIONS</a></li>
+                  <li><a href="groupdetails.html">ABOUT</a></li>
+                  <li><a href="enhancements.html">ENHANCEMENTS</a></li>
+                </ul>
+              </nav>
+            </div>
+        
+            <div class="header-main-sm">
+              <a href="https://www.youtube.com/" target="_blank"><div class="header-main-sm-yt"></div></a>
+            </div>
+          </header>
+            <!-----------------------------------Code for Identity-------------------------------------->
+            <br><br><br>
+          <input type="radio" id="NetAdmin" name="JobType">
+          <label for="NetAdmin">Network System Administrator (#52348)</label>
+          <input type="radio" id="WebDev" name="JobType">
+          <label for="WebDev"> Wev developer (#53549)</label>
+          <br><br>
+          <input id="firstname" type="text" placeholder="Enter your first name" maxlength="20" name="firstname" required pattern="[A-Za-z]{2,20}"/>
+          <input id="lastname" type="text" placeholder="Enter your last name" maxlength="20" name="lastname" required pattern="[A-Za-z]{2,20}"/>
+          <br><br>
+          <input id="dob" type="text" placeholder="dd/mm/yyyy" maxlength="10" name="dob" required pattern="\d{2}/\d{2}/\d{4}">
+          <input id="middlename" type="text" placeholder="Enter middlename here" id="middlename"/>
+          <p></p>
+          <input id="email" type="text" placeholder="Enter email here" name="email" required>
+          <p></p>
+          <div class="gender">
+            <fieldset>
+              <legend>Choose Your Gender</legend>
+                <input type="radio" id="male" name="gender">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender">
+                <label for="other">Other</label><br>
+                <input type="radio" id="notsay" name="gender">
+                <label for="notsay">Prefer not to say</label><br>
+            </fieldset>
+          </div>
+          <p></p> 
+          <input class="phonenumber" type="text" placeholder="Enter Phone number here" maxlength="12" required pattern="\d{8,12}">
+          <!---------------------------Code for Adress information--------------------->
+          <h2 class="address">Address</h2>
+          <div class="countries">
+              <select id="country" country_name="country" class="country">
+                  <option value="blank">Select country</option>
+                  <option value="AUS">Australia</option>
+              </select>
+          </div>
+          <p></p>
+          <input class="adone" type="text" placeholder="Address line 1" maxlength="40" required/> 
+          <p></p>
+          <input class="adtwo" type="text" placeholder="Address line 2" maxlength="40" required/>
+          <p></p>
+        <div class="state">
+              <input class="suburb" type="text" placeholder="Enter Suburb" required maxlength="40"/>
+          <select id="states" state_name="states" class="states">
+              <option value="blank">Select a state</option>
+              <option value="ACT">Australian Capital Territory</option>
+          <option value="NSW">New South Wales</option>
+          <option value="NT">Northern Territory</option>
+          <option value="QLD">Queensland</option>
+          <option value="SA">South Australia</option>
+          <option value="TAS">Tasmania</option>
+          <option value="VIC">Victoria</option>   
+          <option value="WA">Western Australia</option>
+          </select>
+          <p></p>
+          <input class="postcode" type="text" placeholder="Postcode" maxlength="4" required pattern="\d{4}"/>
+          <p></p>
+        </div>
+          <!---------------------------------Code for skills---------------------------------->
+          <h2 class="otherskill">Skills</h2>
+          <div id="skills">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="check1" type="checkbox" name="skills" value="1">
+              <label for="check1">C++, CSS, HTML</label>
+              &nbsp;<input class="check2" type="checkbox" name="skills" value="2">
+              <lable for="check2">Microsoft Office</lable>
+            <br><br>
+              &nbsp;<input class="check3" type="checkbox" name="skills" value="3">
+              <label for="check3">MySQL</label>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="check4" type="checkbox" name="skills" value="4">
+              <label for="check4">PHP</label>
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="check5" type="checkbox" name="skills" value="5">
+              <label for="check5">Java, JavaScript</label>&nbsp;
+              <input class="otherCheck" type="checkbox" name="skills">
+              <label for="otherCheck" id="checkbox">Other Skills</label>
+          </div>
+            <br>
+          <h3 id="otherbox">Other Skills</h3>
+          <textarea id="skillbox" placeholder="Enter Other skills" maxlength="200" rows="8" cols="30" name="skillbox"></textarea>
+          </div>
+          <h3>Why do you want to work with LESTER TOUCHES TECH?</h3>
+          <textarea class="reason" type="text" placeholder=" Explain why you would like to work here in 200 words or less"
+          maxlength="200" rows="8" cols="30" name="reason"></textarea>
+          <br><br><br>
+          <input type="file" id="upload-btn" name="upload" hidden>
+          <label for="upload-btn" class="upload-label">Upload Resume</label>
+          <br>
+          <input type="submit" value="Submit Application" class="submit">
+          <br><br>
+        </form>
+      </div>
+    </body>
+    </form>
+</section>
+<!-----------------------------------The footer------------------------------->
+ <footer class="footer-whole">
+
+  <!--the left section of the footer-->
+  <div class="footer-leftside">
+    <img src="image/Swinburne-post-white.png" alt="company-logo">
+  </div>
+
+  <!--the right section of the footer-->
+  <div class="footer-rightside"> 
+    <div class="column-1">
+      <p><strong>INFO</strong></p>
+      <ul>
+        <li><a href=#>Enhancements</a></li>
+        <li><a href=#>References</a></li>
+        <li><a href=#>Terms and Services</a></li>
+        <li><a href=#>Q&A</a></li>
+        <li><a href=#>About us</a></li>
+    </div>
+
+    <div class="column-second">
+      <p class="follow"><strong>FOLLOW US</strong></p>
+      <div class="column-second-logo">
+        <img id="facebook" src="image/556-5568208_facebook-icon-facebook-icon-dark-grey.png" alt="facebook">
+        <img id="discord" src="image/discord.81cfd5c2.png" alt="discord">
+        <img id="youtube" src="image/dea6jor-4e0e1daf-3b5a-4ffc-b876-a04aed600319.png" alt="youtube">
+      </div>
+    </div>
+    <div class="last-line">
+        <p class="company-line"> &#169; Company's name 2023 Powered by Mercury</p>
+    </div>
+  </div>
+
+
+    <p class="footer-middle">	&#8212;	&#8212; &#8212;	&#8212;	&#8212;	&#8212; &#8212; &nbsp; &#64; Swinburne University of Technology &nbsp; &#8212; &#8212;	&#8212;	&#8212;	&#8212;	&#8212;	&#8212;</p>
+
+  
+</footer>
+      </section>
+  </body>
+</html>
